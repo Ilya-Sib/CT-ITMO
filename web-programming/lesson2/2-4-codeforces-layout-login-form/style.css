@@ -1,0 +1,67 @@
+main .login-form-box {
+    width: 30rem;
+    border: 1px solid darkgray;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+main .login-form-box .header {
+    color: darkblue;
+    font-size: 1.1rem;
+    font-family: "Arial", sans-serif;
+    padding-left: 0.5rem;
+    border-bottom: 1px solid darkgray;
+    font-weight: bold;
+}
+
+main .login-form-box .body .field {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+main .login-form-box .body .field .name {
+    text-align: right;
+    padding-right: 5%;
+    flex-basis: 40%;
+}
+
+main .login-form-box .body .field .value {
+    flex-basis: 55%;
+}
+
+main .login-form-box .body .field .error {
+    color: red;
+    font-size: 0.75rem;
+    flex-basis: 55%;
+}
+
+main .login-form-box .body .checkbox-field {
+    padding-left: 45%;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+
+main .login-form-box .body .button-field {
+    padding-left: 45%;
+    font-size: 1.2rem;
+}
+
+main .login-form-box .body .button-field input {
+    width: 4rem;
+}
+
+main .login-form-box .body .links {
+    text-align: right;
+}
+
+main .login-form-box .footer {
+    border-top: 1px solid darkgray;
+}
+
+main .login-form-box .footer,
+main .login-form-box .body .links {
+    text-align: right;
+    padding-right: 0.25rem;
+}

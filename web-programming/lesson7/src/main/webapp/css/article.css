@@ -1,0 +1,15 @@
+main article .title {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main article .information {
+    color: darkgray;
+    font-size: 13px;
+}
+
+main article .body {
+    border-left: 5px solid lightgray;
+    padding-left: 10px;
+}

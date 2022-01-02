@@ -1,0 +1,325 @@
+:root {
+    --border-color: rgb(185, 185, 185);
+    --border-radius: 6px;
+    --black-color: #333;
+    --caption-color: #3B5998;
+    --table-color: lightgray;
+    --table-border: 1px solid var(--table-color);
+    color: var(--black-color);
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+}
+
+html {
+    padding: 1rem;
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+
+header nav {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+header nav ul {
+    float: left;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+header nav ul li {
+    padding: 0;
+    display: inline;
+    margin: 0 0 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Arial Narrow", sans-serif;
+    color: var(--black-color);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+header nav .search {
+    float: right;
+    padding-top: 0.8rem;
+    padding-right: 1rem;
+}
+
+header nav .search input {
+    background: url(../img/search-16x16.png) 2px 2px no-repeat;
+    padding-left: 20px;
+    height: 16px;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+main {
+    margin-right: 21rem;
+}
+
+main .datatable .caption {
+    border-top: var(--table-border);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom: var(--table-border);
+    text-align: left;
+    padding-left: 10px;
+    background-color: var(--table-color);
+}
+
+main .datatable table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border-color: var(--table-color);
+}
+
+main .datatable table thead tr th,
+main .datatable table tbody tr td {
+    display: table-cell;
+    border: var(--table-border);
+    border-left: none;
+    border-top: none;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+}
+
+main .datatable table thead tr th:first-child,
+main .datatable table tbody tr td:first-child {
+    border-left: var(--table-border);
+}
+
+main .datatable table tbody tr:nth-child(2n + 1) {
+    background: whitesmoke;
+}
+
+main article {
+    margin-top: 2rem;
+}
+
+main article .title {
+    color: var(--caption-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+main article .information {
+    color: darkgray;
+    font-size: 0.8rem;
+}
+
+main article .body {
+    border-left: 5px solid lightgray;
+    padding-left: 10px;
+}
+
+main article .attachment {
+    list-style-type: none;
+    display: contents;
+}
+
+main article .attachment li {
+    background: url("../img/paperclip-16x16.png") 2px 2px no-repeat;
+    padding-top: 0.2rem;
+    padding-left: 20px;
+    color: darkgray;
+    font-size: 0.7rem;
+    height: 16px;
+}
+
+main article .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+main article .footer .left {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+main article .footer .left .positive-score {
+    font-size: 1.1rem;
+    color: green;
+    font-weight: bold;
+    padding: 0.25rem;
+}
+
+main article .footer .right {
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+}
+
+main article .footer .right img {
+    padding-left: 1rem;
+    padding-right: 0.25rem;
+}
+
+main .login-form-box {
+    margin: 2rem auto 0;
+    width: 30rem;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+main .login-form-box .header {
+    color: var(--caption-color);
+    font-size: 1.1rem;
+    font-family: "Arial", sans-serif;
+    padding-left: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid var(--border-color);
+    font-weight: bold;
+}
+
+main .login-form-box .body .field {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+main .login-form-box .body .field .name {
+    text-align: right;
+    padding-right: 5%;
+    flex-basis: 35%;
+}
+
+main .login-form-box .body .field .value {
+    flex-basis: 60%;
+}
+
+main .login-form-box .body .field .name,
+main .login-form-box .body .field .value {
+    padding-top: 0.5rem;
+}
+
+main .login-form-box .body .field .error {
+    color: red;
+    font-size: 0.75rem;
+    flex-basis: 60%;
+}
+
+main .login-form-box .body .checkbox-field {
+    padding-left: 40%;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+
+main .login-form-box .body .button-field {
+    padding-left: 40%;
+}
+
+main .login-form-box .body .button-field input {
+    width: 6rem;
+}
+
+main .login-form-box .body .links {
+    margin-top: 1rem;
+}
+
+main .login-form-box .footer {
+    border-top: 1px solid darkgray;
+}
+
+main .login-form-box .footer,
+main .login-form-box .body .links {
+    text-align: right;
+    padding: 0.25rem;
+    font-size: 0.75rem;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+aside section {
+    border: 1px solid var(--border-color);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+aside section .header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→";
+}
+
+aside section .body {
+    padding: 1rem;
+}
+
+aside section .footer {
+    border-top: 1px solid var(--border-color);
+    overflow: auto;
+    padding: 0.25rem;
+}
+
+aside section .footer a {
+    float: right;
+    font-size: 0.75rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}

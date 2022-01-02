@@ -1,0 +1,36 @@
+nav {
+    border: 1px solid #b9b9b9;
+    border-radius: 6px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 1rem 0;
+
+}
+
+nav ul li {
+    padding: 0;
+    display: inline;
+    margin: 0 0 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Arial Narrow", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+nav .search {
+    position: absolute;
+    top: calc(32px + 2rem);
+    right: 1.5rem;
+}
+
+nav .search input {
+    background: url(/img/search-16x16.png) 2px 2px no-repeat;
+    padding-left: 20px;
+}

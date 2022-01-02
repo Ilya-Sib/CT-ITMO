@@ -1,0 +1,47 @@
+main article .title {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main article .information {
+    color: darkgray;
+    font-size: 13px;
+}
+
+main article .body {
+    border-left: 5px solid lightgray;
+    padding-left: 10px;
+}
+
+main article .attachment {
+    list-style-type: none;
+    display: contents;
+}
+
+main article .attachment li {
+    background: url("img/paperclip-16x16.png") 2px 2px no-repeat;
+    padding-left: 20px;
+    color: darkgray;
+    font-size: 13px;
+}
+
+main article .footer {
+    margin-top: 0.5rem;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+main article .footer .left {
+    float: left;
+    padding-left: 0.5rem;
+    color: green;
+    font-weight: bold;
+}
+
+main article .footer .right {
+    float: right;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+}
